@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7ecd32d3.chunk.css",
+    "main.js": "/static/js/main.1a29c2ec.chunk.js",
+    "runtime-main.js": "/static/js/runtime-main.fdea43d8.js",
+    "static/css/2.fe80f2d4.chunk.css": "/static/css/2.fe80f2d4.chunk.css",
+    "static/js/2.db244c72.chunk.js": "/static/js/2.db244c72.chunk.js",
+    "index.html": "/index.html",
+    "precache-manifest.52d7fc97504391db7b56f3de19ee1d3c.js": "/precache-manifest.52d7fc97504391db7b56f3de19ee1d3c.js",
+    "service-worker.js": "/service-worker.js",
+    "static/media/index.css": "/static/media/muli-latin-900italic.f99056b6.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fdea43d8.js",
+    "static/css/2.fe80f2d4.chunk.css",
+    "static/js/2.db244c72.chunk.js",
+    "static/css/main.7ecd32d3.chunk.css",
+    "static/js/main.1a29c2ec.chunk.js"
+  ]
+}

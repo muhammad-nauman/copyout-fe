@@ -12,7 +12,7 @@ function FooterLayout3(props)
             <AppBar id="fuse-footer" className="relative z-10" color="default">
                 <Toolbar className="flex items-center container py-0 px-16 lg:px-24">
                     <Typography>
-                        Footer
+                        CopyOut © All Rights Reserved { new Date().getFullYear() }
                     </Typography>
                 </Toolbar>
             </AppBar>

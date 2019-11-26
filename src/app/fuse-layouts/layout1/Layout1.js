@@ -85,8 +85,6 @@ function Layout1(props)
     const classes = useStyles(props);
     const {routes} = appContext;
 
-    // console.warn('FuseLayout:: rendered');
-
     switch ( config.scroll )
     {
         case 'body':
@@ -138,7 +136,7 @@ function Layout1(props)
                                         <FooterLayout1/>
                                     )}
 
-                                    <SettingsPanel/>
+                                    {config.settings.display === true && <SettingsPanel/>}
 
                                 </div>
 
@@ -216,7 +214,7 @@ function Layout1(props)
                                     <FooterLayout1/>
                                 )}
 
-                                <SettingsPanel/>
+                                {config.settings.display === true && <SettingsPanel/>}
 
                             </div>
 

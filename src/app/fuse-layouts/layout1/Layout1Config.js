@@ -23,6 +23,9 @@ const config = {
         },
         rightSidePanel: {
             display: true
+        },
+        settings      : {
+            display: true,
         }
     },
     form    : {
