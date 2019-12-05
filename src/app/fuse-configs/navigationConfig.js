@@ -8,6 +8,13 @@ const navigationConfig = [
         ]
     },
     {
+        id        : 'dashboard',
+        title     : 'Dashboard',
+        type      : 'item',
+        icon      : 'apps',
+        url       : '/dashboard',
+    },
+    {
         'id'      : 'users',
         'title'   : 'Management',
         'type'    : 'collapse',

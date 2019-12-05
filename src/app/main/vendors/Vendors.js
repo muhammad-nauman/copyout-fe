@@ -29,7 +29,10 @@ class Vendors extends Component {
                     root: classes.layoutRoot
                 }}
                 header={
-                    <div className="p-24"><h4>Vendors</h4></div>
+                    <div className="p-24 flex">
+                        <h4>Vendors</h4>
+                        <button className="flex-3 inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold px-10 rounded-full">Add New</button>
+                    </div>
                 }
                 contentToolbar={
                     <div className="px-24"><h4>All Vendors</h4></div>
