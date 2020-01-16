@@ -9,6 +9,7 @@ import { RidersConfig } from 'app/main/riders/RidersConfig'
 import { LoginConfig } from 'app/main/auth/login/LoginConfigs'
 import { RegisterConfig } from 'app/main/auth/register/RegisterConfig'
 import { ForgotPasswordConfig } from 'app/main/auth/password/ForgotPasswordConfig'
+import { DashboardConfig } from 'app/main/dashboard/DashboardConfig'
 
 const routeConfigs = [
     VendorsConfig,
@@ -19,13 +20,14 @@ const routeConfigs = [
     LoginConfig,
     RegisterConfig,
     ForgotPasswordConfig,
+    DashboardConfig,
 ];
 
 const routes = [
     ...FuseUtils.generateRoutesFromConfigs(routeConfigs),
     {
         path     : '/',
-        component: () => <Redirect to="/vendors"/>
+        component: () => <Redirect to="/login"/>
     }
 ];
 

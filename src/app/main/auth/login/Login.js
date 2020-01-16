@@ -6,6 +6,7 @@ import {FuseAnimate} from '@fuse';
 import {useForm} from '@fuse/hooks';
 import {Link} from 'react-router-dom';
 import clsx from 'clsx';
+import service from '../../../services/jwtService'
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -14,7 +15,7 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
-function Login2Page()
+function Login()
 {
     const classes = useStyles();
 
@@ -22,7 +23,7 @@ function Login2Page()
         email   : '',
         password: '',
         remember: true
-    });
+    }, handleSubmit);
 
     function isFormValid()
     {
@@ -35,6 +36,7 @@ function Login2Page()
     function handleSubmit(ev)
     {
         ev.preventDefault();
+        service.signInWithEmailAndPassword(form);
         resetForm();
     }
 
@@ -126,6 +128,7 @@ function Login2Page()
                                 className="w-full mx-auto mt-16"
                                 aria-label="LOG IN"
                                 disabled={!isFormValid()}
+                                onClick={handleSubmit}
                             >
                                 LOGIN
                             </Button>
@@ -160,4 +163,4 @@ function Login2Page()
     );
 }
 
-export default Login2Page;
+export default Login;

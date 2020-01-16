@@ -3,13 +3,16 @@ import jwtService from 'app/services/jwtService';
 import {setUserData} from './user.actions';
 import * as Actions from 'app/store/actions';
 
+export const LOGIN = 'LOGIN';
 export const LOGIN_ERROR = 'LOGIN_ERROR';
 export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
-export const LOGIN = 'LOGIN';
 
 export function submitLogin({email, password})
 {
-    return (dispatch) =>
+    return (dispatch) => {
+        dispatch({
+            type: LOGIN
+        });
         jwtService.signInWithEmailAndPassword(email, password)
             .then((user) => {
                     dispatch(setUserData(user));
@@ -25,6 +28,7 @@ export function submitLogin({email, password})
                     payload: error
                 });
             });
+    }
 }
 
 export function submitLoginWithFireBase({username, password})

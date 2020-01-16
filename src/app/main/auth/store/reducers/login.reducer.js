@@ -2,7 +2,6 @@ import * as Actions from '../actions';
 
 const initialState = {
     success: false,
-    loading: false,
     error  : {
         username: null,
         password: null

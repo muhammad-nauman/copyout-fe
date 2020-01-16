@@ -2,24 +2,23 @@ import * as Actions from '../actions';
 
 const initialState = {
     success: false,
-    loading: false,
     error  : {
         username: null,
         password: null
     }
 };
 
-const login = function (state = initialState, action) {
+const register = function (state = initialState, action) {
     switch ( action.type )
     {
-        case Actions.LOGIN_SUCCESS:
+        case Actions.REGISTER_SUCCESS:
         {
             return {
                 ...initialState,
                 success: true
             };
         }
-        case Actions.LOGIN_ERROR:
+        case Actions.REGISTER_ERROR:
         {
             return {
                 success: false,
@@ -33,4 +32,4 @@ const login = function (state = initialState, action) {
     }
 };
 
-export default login;
+export default register;
